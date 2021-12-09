@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Fjalla+One&display=swap" rel="stylesheet">
+    <title>Contact us</title>
+    <style>
+        body {
+            font-family: "Fjalla One";
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 320px;
+            border-color: white;
+        }
+        
+        h1 {
+            color: #FF67A3;
+            font-size: 3rem;
+            font-family: "Coiny";
+            line-height: 35px;
+            text-align: left;
+        }
+        
+        h1 strong {
+            color: #0C4495;
+        }
+        
+        #fname,
+        #lname,
+        #email,
+        #comments {
+            min-width: 320px;
+            max-width: 1000px;
+            padding: 12px 12px;
+            margin-top: 5px;
+            border: 1px solid #F8F600;
+            border-radius: 5px;
+            background-color: #FEFDCC;
+        }
+        
+        #checkbox {
+            margin-bottom: 30px;
+        }
+        
+        p {
+            font-family: "Fjalla One";
+            margin-top: 10px;
+            margin-bottom: 8px;
+            font-size: 0.9em;
+        }
+        
+        input[type='submit'] {
+            font-family: "Coiny";
+            font-size: 1.5em;
+            padding: 7px 20px;
+            border: 1px solid #0C4495;
+            border-radius: 20px;
+            background-color: #0C4495;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        Envie de <br /> <strong>nous contacter ?</strong>
+    </h1>
+    <form action="#">
+        <label>
+              <input id="fname" type="text" 
+                placeholder="Prénom" 
+                autocomplete="on" />
+            </label>
+        <br />
+        <label>
+              <input id="lname" type="text"
+                     placeholder="Nom" />
+            </label>
+        <br />
+        <label>
+                <input id="email" type="text" name="email"
+                       placeholder="jon.snow@bzh.fr"/>
+              </label>
+        <br />
+        <textarea id="comments" rows="8" name="comments"></textarea>
+        <br />
+        <label>
+                <input id="checkbox" type="checkbox" name="newsletter" />
+                Je souhaite recevoir la newsletter
+            </label>
+        <br />
+        <input type="submit" value="Envoyer" />
+    </form>
+</body>
+
+</body>
+
+</html>
