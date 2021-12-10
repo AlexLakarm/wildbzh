@@ -1,107 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
-<head>
+<hhead>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Fjalla+One&display=swap" rel="stylesheet">
     <title>Contact us</title>
-    <style>
-        body {
-            font-family: "Fjalla One";
-        }
-        
-        form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-width: 320px;
-            border-color: white;
-        }
-        
-        h1 {
-            color: #FF67A3;
-            font-size: 3rem;
-            font-family: "Coiny";
-            line-height: 35px;
-            text-align: left;
-        }
-        
-        h1 strong {
-            color: #0C4495;
-        }
-        
-        #fname,
-        #lname,
-        #email,
-        #comments {
-            min-width: 320px;
-            max-width: 1000px;
-            padding: 12px 12px;
-            margin-top: 5px;
-            border: 1px solid #F8F600;
-            border-radius: 5px;
-            background-color: #FEFDCC;
-        }
-        
-        #checkbox {
-            margin-bottom: 30px;
-        }
-        
-        p {
-            font-family: "Fjalla One";
-            margin-top: 10px;
-            margin-bottom: 8px;
-            font-size: 0.9em;
-        }
-        
-        input[type='submit'] {
-            font-family: "Coiny";
-            font-size: 1.5em;
-            padding: 7px 20px;
-            border: 1px solid #0C4495;
-            border-radius: 20px;
-            background-color: #0C4495;
-            color: white;
-        }
-    </style>
 </head>
+<body class="contact">
+        <div class="cta--burger">
+            <div class="trait"></div>
+            <div class="trait"></div>
+            <div class="trait"></div>
+        </div>
+        <div class="menu--burger">
+            <ul>
+                <li>Activités</li>
+                <li>Culture</li>
+                <li>Nature</li>
+                <li>Gastronomie</li>
+                <li> <a href="contact.html">Nous contacter</a></li>
+            </ul>
+        </div>
+    <header>
+        <nav>
+            <ul class="black">
+                <li><a href="index.html"><img class="logo" id="bzhlogo" src="assets/bzhlogo.png" alt="logo_bzh"/></a></li>
+                <li class="nav_li desktop_only">Activités</li>
+                <li class="nav_li desktop_only">Culture</li>
+                <li class="nav_li desktop_only">Nature</li>
+                <li class="nav_li desktop_only">Gastronomie</li>
+                <li class="nav_li desktop_only cta_primary"><a href="contact.html">Nous contacter</a></li>
+            </ul>
+        </nav>  
+    </header>
+    <main>
+        <h1 class="contact_h1">
+            Envie de<br/><strong>nous contacter ?</strong>
+        </h1>
+        <form class="contact_form" action="#">
+            <label>
+                <input id="fname" type="text" 
+                    placeholder="Prénom" 
+                    autocomplete="on" />
+                </label>
+            <br />
+            <label>
+                <input id="lname" type="text"
+                        placeholder="Nom" />
+                </label>
+            <br />
+            <label>
+                    <input id="email" type="text" name="email"
+                        placeholder="jon.snow@bzh.fr"/>
+                </label>
+            <br />
+            <textarea id="comments" rows="8" name="comments"></textarea>
+            <br />
+            <label>
+                    <input id="checkbox" type="checkbox" name="newsletter" />
+                    Je souhaite recevoir la newsletter
+                </label>
+            <br />
+            <input type="submit" value="Envoyer" />
+        </form>
+    </main>
+    <footer>
 
-<body>
-    <h1>
-        Envie de <br /> <strong>nous contacter ?</strong>
-    </h1>
-    <form action="#">
-        <label>
-              <input id="fname" type="text" 
-                placeholder="Prénom" 
-                autocomplete="on" />
-            </label>
-        <br />
-        <label>
-              <input id="lname" type="text"
-                     placeholder="Nom" />
-            </label>
-        <br />
-        <label>
-                <input id="email" type="text" name="email"
-                       placeholder="jon.snow@bzh.fr"/>
-              </label>
-        <br />
-        <textarea id="comments" rows="8" name="comments"></textarea>
-        <br />
-        <label>
-                <input id="checkbox" type="checkbox" name="newsletter" />
-                Je souhaite recevoir la newsletter
-            </label>
-        <br />
-        <input type="submit" value="Envoyer" />
-    </form>
+    </footer>
+    <script>
+        const menuBurger = document.querySelector(".menu--burger");
+        const cta = document.querySelector(".cta--burger");
+    
+        function burgerMenu () {
+            // permet de fermer ou ouvrir le menu burger
+            if (menuBurger.classList.contains("open")) {
+                menuBurger.style.transform = 'translateX(100%)';
+                menuBurger.classList.remove("open")
+            } else {
+                menuBurger.style.transform = 'translateX(0%)';
+                menuBurger.classList.add("open")
+            }
+        }
+    
+        cta.addEventListener("click", burgerMenu);
+    
+    </script>
 </body>
-
-</body>
-
 </html>
