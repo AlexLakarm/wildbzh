@@ -2,7 +2,7 @@
 
 body {
     margin : 0 auto;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-weight: 400;
     overflow-x: hidden;
 }
@@ -71,8 +71,12 @@ header ul {
     list-style : none;
     font-weight: 500;
     padding-top: 10px;
-    margin-top: 10px;
+    margin-top: 15px;
     font-size: 20px; 
+}
+
+.nav_li:hover {
+    color: #0C4495; /*texte se colore en bleu au survol*/
 }
 
 header ul li a {
@@ -80,7 +84,7 @@ header ul li a {
 }
 
 .cta_primary {
-    border: 1px solid #0C4495;
+    height: 35px;
     border-radius: 30px;
     background-color: #0C4495;
     color: white;
@@ -88,12 +92,14 @@ header ul li a {
     padding-right: 20px;
     padding-bottom: 0px;
     padding-top: 10px;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+    vertical-align:middle;
 }
 
-.cta_primary li {
-    margin: 0 auto;
-    padding: 0;
-    height: 20px;
+.cta_primary:hover {
+    background: linear-gradient(#0C4495, #011A71);  /*background dégradé bleu au survol*/
 }
 
 .cta_primary a {
@@ -103,15 +109,22 @@ header ul li a {
 
 
 .logo {
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 90px;
+    padding-left: 5px;
     padding-top: 0;
     margin-top: 0;
     
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 40px;
+    font-family: 'Coiny', cursive;
+}
+
+h2 {
+    font-size:30px;
+    font-family: 'Coiny', cursive;
 }
 /*------ common elements end--------*/
 
@@ -125,7 +138,7 @@ h1 {
  }
 
 #hero {
-    height: 260px;
+    height: 300px;
     width: 100%;
     background-image: url(assets/landscape1.jpg);
     background-size:cover;
@@ -211,7 +224,7 @@ h1 {
         background-image: url(assets/landscape1.jpg);
         background-size:cover;
         background-position-y: -0px;
-        height : 350px;
+        height : 400px;
     }
 }
 
@@ -226,16 +239,17 @@ h1 {
     }
 
     .logo {
-        height: 60px;
-        width: 60px;
+        height: 80px;
+        width: 170px;
+        padding-left: 20px;
     }
 
     #hero {
         width: 100%;
         background-image: url(assets/landscape1.jpg);
         background-size:cover;
-        background-position-y: -150px;
-        height : 380px;
+        background-position-y: -10px;
+        height : 500px;
     }
 }
 
@@ -245,8 +259,8 @@ h1 {
         width: 100%;
         background-image: url(assets/landscape1.jpg);
         background-size:cover;
-        background-position-y: -350px;
-        height : 500px;
+        background-position-y: -200px;
+        height : 600px;
     }
 }
 
@@ -257,7 +271,7 @@ h1 {
         background-image: url(assets/landscape1.jpg);
         background-size:cover;
         background-position-y: -450px;
-        height : 550px;
+        height : 700px;
     }
 }
 /*------media queries end-------*/
