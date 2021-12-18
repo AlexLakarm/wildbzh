@@ -1,7 +1,7 @@
 /*------ common elements --------*/
 
 body {
-    margin : 0 auto;
+    margin: 0 auto;
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
     overflow-x: hidden;
@@ -12,8 +12,9 @@ body {
 }
 
 .primary-500 {
-    color : #71A5DE;
+    color: #71A5DE;
 }
+
 header ul {
     display: flex;
     justify-content: space-between;
@@ -23,60 +24,66 @@ header ul {
     margin-bottom: 0;
 }
 
-    /* menu  burger*/
-    .cta--burger {
-        position: absolute;
-        top: 10px;
-        right: 23px;
-        height: 17px;
-        width: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        z-index: 2;
-    }
-    .cta--burger .trait {
-        height: 2px;
-        width: 100%;
-        background-color: #000;
-    }
 
-    .menu--burger {
-        height: 100vh;
-        width: 45%;
-        background-color: black;
-        color: whitesmoke;
-        opacity : 50%;
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform: translateX(100%);
-    }
+/* menu  burger*/
 
-    .menu--burger ul li {
-        list-style : none;
-        text-align: left;
-        padding-top: 5px;
-    }
+.cta--burger {
+    position: absolute;
+    top: 10px;
+    right: 23px;
+    height: 17px;
+    width: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+}
 
-    .menu--burger ul {
-        padding-left: 10px;
-        padding-top: 5px;
-        margin-top: 0;
-    }
-    /* menu  burger end*/
+.cta--burger .trait {
+    height: 2px;
+    width: 100%;
+    background-color: #000;
+}
+
+.menu--burger {
+    height: 100vh;
+    width: 45%;
+    background-color: black;
+    color: whitesmoke;
+    opacity: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+}
+
+.menu--burger ul li {
+    list-style: none;
+    text-align: left;
+    padding-top: 5px;
+}
+
+.menu--burger ul {
+    padding-left: 10px;
+    padding-top: 5px;
+    margin-top: 0;
+}
+
+
+/* menu  burger end*/
 
 .nav_li {
-    list-style : none;
+    list-style: none;
     font-weight: 500;
     padding-top: 10px;
     margin-top: 15px;
-    font-size: 20px; 
+    font-size: 20px;
 }
 
 .nav_li:hover {
-    color: #0C4495; /*texte se colore en bleu au survol*/
+    color: #0C4495;
+    /*texte se colore en bleu au survol*/
 }
 
 header ul li a {
@@ -95,18 +102,18 @@ header ul li a {
     font-weight: 300;
     font-size: 18px;
     text-align: center;
-    vertical-align:middle;
+    vertical-align: middle;
 }
 
 .cta_primary:hover {
-    background: linear-gradient(#0C4495, #011A71);  /*background dégradé bleu au survol*/
+    background: linear-gradient(#0C4495, #011A71);
+    /*background dégradé bleu au survol*/
 }
 
 .cta_primary a {
-    color : white;
+    color: white;
     height: 20px;
 }
-
 
 .logo {
     height: 60px;
@@ -114,7 +121,6 @@ header ul li a {
     padding-left: 5px;
     padding-top: 0;
     margin-top: 0;
-    
 }
 
 h1 {
@@ -123,25 +129,28 @@ h1 {
 }
 
 h2 {
-    font-size:30px;
+    font-size: 30px;
     font-family: 'Coiny', cursive;
 }
+
+
 /*------ common elements end--------*/
+
 
 /*------ welcome page --------*/
 
 .welcome h1 {
-    position : relative;
+    position: relative;
     text-align: center;
-    top :100px;
+    top: 100px;
     margin-top: 0px;
- }
+}
 
 #hero {
     height: 300px;
     width: 100%;
     background-image: url(assets/landscape1.jpg);
-    background-size:cover;
+    background-size: cover;
     background-position-y: -0px;
 }
 
@@ -150,128 +159,290 @@ h2 {
     font-size: 20px;
     font-weight: 400;
 }
+
+
 /*------welcome page end-------*/
+
 
 /*------contact page-------*/
 
-    .contact body {
-        font-family: "Fjalla One";
-    }
-    
-    .contact h1 {
-        color: #FF67A3;
-        font-size: 3rem;
-        font-family: "Coiny";
-        margin : 25px auto;
-        line-height: 3rem;
-        text-align: center;
-    }
-    
-    h1 strong {
-        color: #0C4495;
-    }
+.contact body {
+    font-family: "Fjalla One";
+}
 
-    .contact_form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        min-width: 320px;
-        border-color: white;
-    }
-    
-    .contact #fname,
-    #lname,
-    #email,
-    #comments {
-        min-width: 320px;
-        max-width: 1000px;
-        padding: 12px 12px;
-        margin-top: 5px;
-        border: 1px solid #F8F600;
-        border-radius: 5px;
-        background-color: #FEFDCC;
-    }
-    
-    .contact #checkbox {
-        margin-bottom: 30px;
-    }
-    
-    .contact p {
-        font-family: "Fjalla One";
-        margin-top: 10px;
-        margin-bottom: 8px;
-        font-size: 0.9em;
-    }
-    
-    .contact input[type='submit'] {
-        font-family: "Coiny";
-        font-size: 1.5em;
-        padding: 7px 20px;
-        border: 1px solid #0C4495;
-        border-radius: 20px;
-        background-color: #0C4495;
-        color: white;
-    }
+.contact_h1 {
+    color: black;
+    font-size: 3rem;
+    font-family: "Coiny";
+    margin: 25px auto;
+    line-height: 3rem;
+    text-align: center;
+}
+
+h1 strong {
+    color: #0C4495;
+}
+
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 320px;
+    border-color: white;
+}
+
+.contact_form #fname,
+#lname,
+#email,
+#comments {
+    min-width: 320px;
+    max-width: 1000px;
+    padding: 12px 12px;
+    margin-top: 5px;
+    border: 1px solid #F8F600;
+    border-radius: 5px;
+    background-color: #FEFDCC;
+}
+
+.contact #checkbox {
+    margin-bottom: 30px;
+}
+
+.contact_form p {
+    font-family: "Fjalla One";
+    margin-top: 10px;
+    margin-bottom: 8px;
+    font-size: 0.9em;
+}
+
+.contact_form input[type='submit'] {
+    font-size: 1em;
+    padding: 7px 20px;
+    font-weight: 300;
+    border: 1px solid #0C4495;
+    border-radius: 30px;
+    background-color: #0C4495;
+    color: white;
+}
+
+
 /*------contact page end-------*/
 
 
 /*------media queries-------*/
 
-@media screen and (min-width : 321px) {
-
+@media screen and (min-width: 321px) {
     #hero {
         width: 100%;
         background-image: url(assets/landscape1.jpg);
-        background-size:cover;
+        background-size: cover;
         background-position-y: -0px;
-        height : 400px;
+        height: 400px;
     }
 }
 
-@media screen and (min-width : 768px) {
-
+@media screen and (min-width: 768px) {
     .desktop_only {
         display: flex;
     }
-
     .cta--burger {
-        display : none;
+        display: none;
     }
-
     .logo {
         height: 80px;
         width: 170px;
         padding-left: 20px;
     }
-
     #hero {
         width: 100%;
         background-image: url(assets/landscape1.jpg);
-        background-size:cover;
+        background-size: cover;
         background-position-y: -10px;
-        height : 500px;
+        height: 500px;
+    }
+    .footer-content {
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+        ;
     }
 }
 
-@media screen and (min-width : 1224px) {
-
+@media screen and (min-width: 1224px) {
     #hero {
         width: 100%;
         background-image: url(assets/landscape1.jpg);
-        background-size:cover;
+        background-size: cover;
         background-position-y: -200px;
-        height : 600px;
+        height: 600px;
     }
 }
 
-@media screen and (min-width : 1824px) {
-
+@media screen and (min-width: 1824px) {
     #hero {
         width: 100%;
         background-image: url(assets/landscape1.jpg);
-        background-size:cover;
+        background-size: cover;
         background-position-y: -450px;
-        height : 700px;
+        height: 700px;
     }
 }
+
+
 /*------media queries end-------*/
+
+
+/*------footer-------*/
+
+.footer {
+    margin-top: 20px;
+    background-color: #0C4495;
+    font-family: 'Nunito', sans-serif;
+    color: #fff;
+}
+
+.footer-wave-svg {
+    background-color: transparent;
+    display: block;
+    height: 50px;
+    position: relative;
+    top: -1px;
+    width: 100%;
+}
+
+.footer-wave-path {
+    fill: #fff;
+}
+
+.footer-content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    position: relative;
+}
+
+.footer-content-column {
+    box-sizing: border-box;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    color: #fff;
+}
+
+.footer-content-column ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo-footer {
+    margin-top: 20px;
+    margin-left: -30px;
+    height: 30%;
+}
+
+.footer-menu {
+    margin: 10px 0px 20px 30px;
+}
+
+.footer-menu-name {
+    color: #fffff2;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: .1em;
+    line-height: 18px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.footer-menu-list {
+    list-style: none;
+    font-weight: 300;
+    margin-bottom: 0;
+    margin-top: 10px;
+    padding-left: 0;
+}
+
+.footer-menu-list li {
+    margin-top: 5px;
+}
+
+.footer-newsletter {
+    margin: 10px 0px 20px 30px;
+}
+
+#email-newsletter {
+    padding: 5px 5px;
+    margin-top: 5px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: #FEFDCC;
+}
+
+.social-menu {
+    justify-content: center;
+    display: flex;
+    list-style-type: none;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+}
+
+.social-menu i {
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 25px;
+    margin-right: 10px;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    background-color: #FF67A3;
+}
+
+.social-menu i:before {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.social-menu a {
+    text-decoration: none;
+}
+
+.social-menu i:hover {
+    opacity: .7;
+    border-radius: 0;
+}
+
+.footer-copyright {
+    background-color: #21243D;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-copyright-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+.footer-copyright-text {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer-copyright-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/*------footer end-------*/
