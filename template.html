@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Fjalla+One&display=swap" rel="stylesheet">
+   
+    <title>Culture</title>
+</head>
+<body class="container">
+    <div class="cta--burger">
+        <div class="trait"></div>
+        <div class="trait"></div>
+        <div class="trait"></div>
+    </div>
+    <div class="menu--burger">
+        <ul>
+            <li>Activités</li>
+            <li>Culture</li>
+            <li>Nature</li>
+            <li>Gastronomie</li>
+            <li> <a href="contact.html">Nous contacter</a></li>
+        </ul>
+    </div>
+    <header>
+        <nav>
+            <ul class="black">
+                <li><a href="index.html"><img class="logo" id="bzhlogo" src="assets/bzhlogo.png" alt="logo_bzh"/></a></li>
+                <li class="nav_li desktop_only">Activités</li>
+                <li class="nav_li desktop_only">Culture</li>
+                <li class="nav_li desktop_only">Nature</li>
+                <li class="nav_li desktop_only">Gastronomie</li>
+                <li class="nav_li desktop_only cta_primary"><a href="contact.html">Nous contacter</a></li>
+            </ul>
+        </nav>  
+    </header>
+
+    <main>
+        <!--CODE GOES HERE -->
+        <section class="section1"> 
+            <h1 class="culture_h1" style="color:#0C4495;">Envie de<br/>respirer ?</h1>
+        
+            <div class="parentBox">
+                <div class="child1">
+                    <img src="./assets/landscape1.jpg">
+                </div>
+                <div class="child2">
+                    <h2>Loren Ipsum</h2>
+                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting </br>industry. Lorem Ipsum try. Lorem Ipsum ry. Lorem Ipsum. .</p>
+                </div>
+            </div>
+       </section>
+
+       <section class="section2">     
+        <div class="parentBox">
+            <div class="child3">
+                <img src="./assets/landscape_bzh2.jpg">
+            </div>
+            <div class="child4">
+                <h2>Loren Ipsum</h2>
+                <p> Lorem Ipsum is simply dummy text of the printing and typesetting </br>industry. Lorem Ipsum try. Lorem Ipsum ry. Lorem Ipsum. .</p>
+            </div>
+        </div>
+   </section>
+
+   <section class="section3">     
+    <div class="parentBox">
+        <div class="child5">
+            <img src="./assets/landscape1.jpg">
+        </div>
+        <div class="child6">
+            <h2>Loren Ipsum</h2>
+            <p> Lorem Ipsum is simply dummy text of the printing and typesetting </br>industry. Lorem Ipsum try. Lorem Ipsum ry. Lorem Ipsum. .</p>
+        </div>
+    </div>
+</section>
+
+       <!-- <section class="discover">
+           <div>
+            <h3>A découvrir</h3>
+           </div>
+           <div class="art1">
+                <a href="./index.html">Article 1 </a>
+                <img src="./assets/picto.png " alt="article 1"/> 
+                
+           </div>
+           
+       </section> -->
+      <!--  <article class="art1">
+            <a href="/dossier/le-html-par-lui-meme-2-2-o30298">
+            <img src="../bundles/ftvenapp/images/global/francetfv-education-logo-mini.jpg " alt="francetfv-education-logo-mini éducation"/> Article 1 
+            </a>
+       </article> -->
+       
+      
+
+    </main>
+
+    <footer>
+        <!--FOOTER GOES HERE -->
+    </footer>
+
+    <script>
+        const menuBurger = document.querySelector(".menu--burger");
+        const cta = document.querySelector(".cta--burger");
+    
+        function burgerMenu () {
+            // permet de fermer ou ouvrir le menu burger
+            if (menuBurger.classList.contains("open")) {
+                menuBurger.style.transform = 'translateX(100%)';
+                menuBurger.classList.remove("open")
+            } else {
+                menuBurger.style.transform = 'translateX(0%)';
+                menuBurger.classList.add("open")
+            }
+        }
+    
+        cta.addEventListener("click", burgerMenu);
+    
+    </script>
+
+</body>
+</html>
