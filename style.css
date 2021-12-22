@@ -229,7 +229,158 @@ h1 strong {
 /*------contact page end-------*/
 
 
-/*------template page -------*/
+/*------template page 1-------*/
+
+/* ------ culture page ------- */ 
+
+.culture_h1{
+    padding-left: 20px;
+}
+.parentBox{
+    box-sizing: border-box;
+    display: block;
+    /*margin-left: 200px; le faire en padding*/
+    position: relative;
+    width: 80%;
+    height: 224px;
+}
+.child1{
+    box-sizing: content-box; 
+    position: absolute;   
+    padding-left: 20px;
+}
+
+.child1 img{
+    box-sizing: content-box;
+    border : 6px solid #0C4495;
+    height: 95px;  
+    border-radius: 20px;
+    z-index: -1;
+    position: absolute;
+}
+
+.child2{
+    box-sizing: content-box;
+    background-color: #0C4495;
+   /* padding: -100px;*/
+    padding-left: 10px;
+    margin-left: 60px;
+    height : 100px;
+    width: 55%;
+    margin-top: 50px;
+    border-radius: 20px;
+    z-index: 1;
+    position: absolute;
+    font-size: 10px;
+    
+}
+
+.child2 h2{
+    color: #FF67A3;
+    font-size: 12px;
+}
+
+
+/* 2eme Box */ 
+
+.section2{
+    background-color: #0C4495;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
+
+.child3{
+    box-sizing: content-box; 
+    position: absolute;   
+    padding-left: 20px;
+    background-color: white;
+    padding-top: 30px;
+    /*margin-top: 90px;*/
+    /*width: 100%;*/
+}
+
+.child3 img{
+    box-sizing: content-box;
+    border : 6px solid #0C4495;
+    height: 95px;  
+    border-radius: 20px;
+    z-index: 0;
+    position: absolute;
+    
+}
+
+.child4{
+    box-sizing: content-box;
+    background-color: white;
+   /* padding: -100px;*/
+   /* padding-left: 10px;*/
+    margin-left: 60px;
+    /*height : 100px;*/
+    width: 55%;
+    margin-top: 90px;
+    border-radius: 20px;
+    z-index: 2;
+    position: absolute;
+    font-size: 10px;
+    
+}
+
+
+.child4 h2{
+    color: #FF67A3;
+    font-size: 12px;
+}
+
+
+/* 3eme Box */ 
+
+.child5{
+    box-sizing: content-box; 
+    position: absolute;   
+    padding-left: 20px;
+    /*margin-top: 200px;*/
+}
+
+.child5 img{
+    box-sizing: content-box;
+    border : 6px solid #0C4495;
+    height: 95px;  
+    border-radius: 20px;
+    z-index: -1;
+    position: absolute;
+    margin-top: 300px;
+}
+
+.child6 h2{
+    color: #FF67A3;
+    font-size: 12px;
+}
+
+.child6{
+    box-sizing: content-box;
+    background-color: #0C4495;
+   /* padding: -100px;*/
+    padding-left: 10px;
+    margin-left: 60px;
+    height : 100px;
+    width: 55%;
+    margin-top: 350px;
+    border-radius: 20px;
+    z-index: 1;
+    position: absolute;
+    font-size: 10px;
+    
+}
+
+/* ------ culture page end ------- */ 
+
+
+
+
+/*------template page 1 end-------*/
+
+/*------template page 2-------*/
 
 .title-template {
     display: block;
@@ -338,7 +489,8 @@ img {
 }
 
 
-/*------template page end -------*/
+/*------template page 2 end -------*/
+
 
 
 /*------media queries-------*/
