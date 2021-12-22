@@ -141,7 +141,6 @@ h2 {
 .welcome h1 {
     position: relative;
     text-align: center;
-    top: 100px;
     margin-top: 0px;
 }
 
@@ -177,6 +176,7 @@ h2 {
     margin: 25px auto;
     line-height: 3rem;
     text-align: center;
+    top: 0px;
 }
 
 h1 strong {
@@ -228,6 +228,400 @@ h1 strong {
 
 /*------contact page end-------*/
 
+<<<<<<< HEAD
+=======
+
+/*------template page 1-------*/
+
+/* ------ culture page ------- */ 
+
+.culture_h1{
+    padding-left: 20px;
+}
+.parentBox{
+    box-sizing: border-box;
+    display: block;
+    /*margin-left: 200px; le faire en padding*/
+    position: relative;
+    width: 80%;
+    height: 224px;
+}
+.child1{
+    box-sizing: content-box; 
+    position: absolute;   
+    padding-left: 20px;
+}
+
+.child1 img{
+    box-sizing: content-box;
+    border : 6px solid #0C4495;
+    height: 95px;  
+    border-radius: 20px;
+    z-index: -1;
+    position: absolute;
+}
+
+.child2{
+    box-sizing: content-box;
+    background-color: #0C4495;
+   /* padding: -100px;*/
+    padding-left: 10px;
+    margin-left: 60px;
+    height : 100px;
+    width: 55%;
+    margin-top: 50px;
+    border-radius: 20px;
+    z-index: 1;
+    position: absolute;
+    font-size: 10px;
+    
+}
+
+.child2 h2{
+    color: #FF67A3;
+    font-size: 12px;
+}
+
+
+/* 2eme Box */ 
+
+.section2{
+    background-color: #0C4495;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
+
+.child3{
+    box-sizing: content-box; 
+    position: absolute;   
+    padding-left: 20px;
+    background-color: white;
+    padding-top: 30px;
+    /*margin-top: 90px;*/
+    /*width: 100%;*/
+}
+
+.child3 img{
+    box-sizing: content-box;
+    border : 6px solid #0C4495;
+    height: 95px;  
+    border-radius: 20px;
+    z-index: 0;
+    position: absolute;
+    
+}
+
+.child4{
+    box-sizing: content-box;
+    background-color: white;
+   /* padding: -100px;*/
+   /* padding-left: 10px;*/
+    margin-left: 60px;
+    /*height : 100px;*/
+    width: 55%;
+    margin-top: 90px;
+    border-radius: 20px;
+    z-index: 2;
+    position: absolute;
+    font-size: 10px;
+    
+}
+
+
+.child4 h2{
+    color: #FF67A3;
+    font-size: 12px;
+}
+
+
+/* 3eme Box */ 
+
+.child5{
+    box-sizing: content-box; 
+    position: absolute;   
+    padding-left: 20px;
+    /*margin-top: 200px;*/
+}
+
+.child5 img{
+    box-sizing: content-box;
+    border : 6px solid #0C4495;
+    height: 95px;  
+    border-radius: 20px;
+    z-index: -1;
+    position: absolute;
+    margin-top: 300px;
+}
+
+.child6 h2{
+    color: #FF67A3;
+    font-size: 12px;
+}
+
+.child6{
+    box-sizing: content-box;
+    background-color: #0C4495;
+   /* padding: -100px;*/
+    padding-left: 10px;
+    margin-left: 60px;
+    height : 100px;
+    width: 55%;
+    margin-top: 350px;
+    border-radius: 20px;
+    z-index: 1;
+    position: absolute;
+    font-size: 10px;
+    
+}
+
+/* ------ culture page end ------- */ 
+
+
+
+
+/*------template page 1 end-------*/
+
+/*------template page 2-------*/
+
+.title-template {
+    display: block;
+}
+
+.section-template {
+    overflow: hidden;
+}
+
+.article-template h2 {
+    color: #FF67A3;
+    font-size: 18px !important;
+    line-height: 80%;
+    margin-top: 20px;
+}
+
+.section-template p {
+    font-size: 0.5em;
+}
+
+.blue-section {
+    background-color: #0C4495;
+    background-image: url(assets/Asset\ 2logo.svg);
+    background-size: 120%;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    padding: 1.5em;
+}
+
+.white-section {
+    padding: 1.5em;
+}
+
+.figure-template {
+    height: 25vh;
+}
+
+.article-template {
+    padding: 1em;
+    margin-left: 6em;
+    margin-top: -2em;
+    background: #fff;
+    border: 5px solid #0C4495;
+    border-radius: 20px;
+}
+
+img {
+    height: 100%;
+    border-radius: 30px;
+    object-fit: cover;
+    width: 70%;
+    border: 5px solid #0C4495;
+}
+
+
+/* Discovery cards */
+
+.section-cards-discovery {
+    background-color: #AECBEB;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.section-cards-discovery h2 {
+    color: #fff;
+    font-size: 2em !important;
+    margin: 0px;
+}
+
+.cards-discovery {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+}
+
+.card-discovery a {
+    text-decoration: none;
+    color: #0C4495;
+}
+
+.title-discovery {
+    font-size: 1em;
+    color: #0C4495;
+}
+
+.img-discovery {
+    border-radius: 30px;
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.card-discovery {
+    border-radius: 30px;
+    background-color: #fff;
+    text-align: center;
+    margin: 2vw 10vw 2vw 10vw;
+}
+
+.card-discovery :hover {
+    border: 3px solid #0C4495;
+    transition: .5s;
+    transform: translate(5px, -5px);
+}
+
+
+/*------template page 2 end -------*/
+
+
+
+/*------media queries-------*/
+
+@media screen and (min-width: 321px) {
+    #hero {
+        width: 100%;
+        background-image: url(assets/landscape1.jpg);
+        background-size: cover;
+        background-position-y: -0px;
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .desktop_only {
+        display: flex;
+    }
+    .cta--burger {
+        display: none;
+    }
+    .logo {
+        height: 80px;
+        width: 170px;
+        padding-left: 20px;
+    }
+    #hero {
+        width: 100%;
+        background-image: url(assets/landscape1.jpg);
+        background-size: cover;
+        background-position-y: -10px;
+        height: 500px;
+    }
+    .footer-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .figure-template {
+        height: 50vh;
+    }
+    .white-section {
+        padding: 5em;
+    }
+    .blue-section {
+        padding: 5em;
+    }
+    .section-template p {
+        font-size: 1em;
+    }
+    .article-template h2 {
+        font-size: 2em !important;
+    }
+    .cards-discovery {
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .img-discovery {
+        min-width: 100%;
+        border-radius: 30px;
+    }
+    .card-discovery {
+        border-radius: 30px;
+        background-color: #fff;
+        text-align: center;
+        margin: 1vw 3vw 1vw 3vw;
+    }
+}
+
+@media screen and (min-width: 1224px) {
+    #hero {
+        width: 100%;
+        background-image: url(assets/landscape1.jpg);
+        background-size: cover;
+        background-position-y: -200px;
+        height: 600px;
+    }
+    .figure-template {
+        height: 50vh;
+    }
+    .white-section {
+        padding-left: 12em;
+        padding-right: 12em;
+    }
+    .blue-section {
+        padding-left: 12em;
+        padding-right: 12em;
+    }
+    .section-template p {
+        font-size: 1.5em;
+    }
+    .article-template h2 {
+        font-size: 3em !important;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (min-width: 1824px) {
+    #hero {
+        width: 100%;
+        background-image: url(assets/landscape1.jpg);
+        background-size: cover;
+        background-position-y: -450px;
+        height: 700px;
+    }
+    .figure-template {
+        height: 50vh;
+    }
+    .white-section {
+        padding-left: 14em;
+        padding-right: 14em;
+    }
+    .blue-section {
+        padding-left: 14em;
+        padding-right: 14em;
+    }
+    .section-template p {
+        font-size: 1.8em;
+    }
+}
+
+
+/*------media queries end-------*/
+
+
+>>>>>>> 787a7325dfa8503d4dd4b20503700611611f2fd4
 /*------footer-------*/
 
 .footer {
@@ -271,10 +665,14 @@ h1 strong {
     text-decoration: none;
 }
 
+.footer-logo-container {
+    max-width: 50vw;
+}
+
 .logo-footer {
+    max-width: 100%;
     margin-top: 20px;
     margin-left: -30px;
-    height: 30%;
 }
 
 .footer-menu {
@@ -353,7 +751,8 @@ h1 strong {
 }
 
 .footer-copyright {
-    background-color: #21243D;
+    background-color: #0C4495;
+    ;
     color: #fff;
     text-align: center;
 }
