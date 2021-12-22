@@ -409,7 +409,6 @@ h1 strong {
         display: flex;
         flex-direction: row;
         margin-top: 20px;
-        ;
     }
 }
 
@@ -424,6 +423,5 @@ h1 strong {
         height: 80vh;
     }
 }
-
 
 /*------media queries end-------*/
