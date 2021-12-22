@@ -133,7 +133,6 @@ h2 {
     font-family: 'Coiny', cursive;
 }
 
-
 /*------ common elements end--------*/
 
 
@@ -147,11 +146,13 @@ h2 {
 }
 
 #hero {
-    height: 300px;
-    width: 100%;
-    background-image: url(assets/landscape1.jpg);
+    height: 60vh;
+    width: 100vw;
+    background: url(assets/landscape1.jpg);
+    background-position-y: bottom;
     background-size: cover;
-    background-position-y: -0px;
+    background-position:center;
+
 }
 
 .welcome main h2 {
@@ -159,7 +160,6 @@ h2 {
     font-size: 20px;
     font-weight: 400;
 }
-
 
 /*------welcome page end-------*/
 
@@ -227,70 +227,6 @@ h1 strong {
 
 
 /*------contact page end-------*/
-
-
-/*------media queries-------*/
-
-@media screen and (min-width: 321px) {
-    #hero {
-        width: 100%;
-        background-image: url(assets/landscape1.jpg);
-        background-size: cover;
-        background-position-y: -0px;
-        height: 400px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .desktop_only {
-        display: flex;
-    }
-    .cta--burger {
-        display: none;
-    }
-    .logo {
-        height: 80px;
-        width: 170px;
-        padding-left: 20px;
-    }
-    #hero {
-        width: 100%;
-        background-image: url(assets/landscape1.jpg);
-        background-size: cover;
-        background-position-y: -10px;
-        height: 500px;
-    }
-    .footer-content {
-        display: flex;
-        flex-direction: row;
-        margin-top: 20px;
-        ;
-    }
-}
-
-@media screen and (min-width: 1224px) {
-    #hero {
-        width: 100%;
-        background-image: url(assets/landscape1.jpg);
-        background-size: cover;
-        background-position-y: -200px;
-        height: 600px;
-    }
-}
-
-@media screen and (min-width: 1824px) {
-    #hero {
-        width: 100%;
-        background-image: url(assets/landscape1.jpg);
-        background-size: cover;
-        background-position-y: -450px;
-        height: 700px;
-    }
-}
-
-
-/*------media queries end-------*/
-
 
 /*------footer-------*/
 
@@ -446,3 +382,48 @@ h1 strong {
 
 
 /*------footer end-------*/
+
+/*------media queries-------*/
+
+@media screen and (min-width: 321px) {
+    #hero {
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .desktop_only {
+        display: flex;
+    }
+    .cta--burger {
+        display: none;
+    }
+    .logo {
+        height: 80px;
+        width: 170px;
+        padding-left: 20px;
+    }
+    #hero {
+        height: 80vh;
+    }
+    .footer-content {
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+        ;
+    }
+}
+
+@media screen and (min-width: 1224px) {
+    #hero {
+        height: 80vh;
+    }
+}
+
+@media screen and (min-width: 1824px) {
+    #hero {
+        height: 80vh;
+    }
+}
+
+
+/*------media queries end-------*/
