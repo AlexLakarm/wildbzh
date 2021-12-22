@@ -142,7 +142,6 @@ h2 {
 .welcome h1 {
     position: relative;
     text-align: center;
-    top: 100px;
     margin-top: 0px;
 }
 
@@ -177,6 +176,7 @@ h2 {
     margin: 25px auto;
     line-height: 3rem;
     text-align: center;
+    top: 0px;
 }
 
 h1 strong {
@@ -229,6 +229,118 @@ h1 strong {
 /*------contact page end-------*/
 
 
+/*------template page -------*/
+
+.title-template {
+    display: block;
+}
+
+.section-template {
+    overflow: hidden;
+}
+
+.article-template h2 {
+    color: #FF67A3;
+    font-size: 18px !important;
+    line-height: 80%;
+    margin-top: 20px;
+}
+
+.section-template p {
+    font-size: 0.5em;
+}
+
+.blue-section {
+    background-color: #0C4495;
+    background-image: url(assets/Asset\ 2logo.svg);
+    background-size: 120%;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    padding: 1.5em;
+}
+
+.white-section {
+    padding: 1.5em;
+}
+
+.figure-template {
+    height: 25vh;
+}
+
+.article-template {
+    padding: 1em;
+    margin-left: 6em;
+    margin-top: -2em;
+    background: #fff;
+    border: 5px solid #0C4495;
+    border-radius: 20px;
+}
+
+img {
+    height: 100%;
+    border-radius: 30px;
+    object-fit: cover;
+    width: 70%;
+    border: 5px solid #0C4495;
+}
+
+
+/* Discovery cards */
+
+.section-cards-discovery {
+    background-color: #AECBEB;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.section-cards-discovery h2 {
+    color: #fff;
+    font-size: 2em !important;
+    margin: 0px;
+}
+
+.cards-discovery {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+}
+
+.card-discovery a {
+    text-decoration: none;
+    color: #0C4495;
+}
+
+.title-discovery {
+    font-size: 1em;
+    color: #0C4495;
+}
+
+.img-discovery {
+    border-radius: 30px;
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.card-discovery {
+    border-radius: 30px;
+    background-color: #fff;
+    text-align: center;
+    margin: 2vw 10vw 2vw 10vw;
+}
+
+.card-discovery :hover {
+    border: 3px solid #0C4495;
+    transition: .5s;
+    transform: translate(5px, -5px);
+}
+
+
+/*------template page end -------*/
+
+
 /*------media queries-------*/
 
 @media screen and (min-width: 321px) {
@@ -263,8 +375,39 @@ h1 strong {
     .footer-content {
         display: flex;
         flex-direction: row;
+        justify-content: start;
+        align-items: center;
         margin-top: 20px;
-        ;
+    }
+    .figure-template {
+        height: 50vh;
+    }
+    .white-section {
+        padding: 5em;
+    }
+    .blue-section {
+        padding: 5em;
+    }
+    .section-template p {
+        font-size: 1em;
+    }
+    .article-template h2 {
+        font-size: 2em !important;
+    }
+    .cards-discovery {
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .img-discovery {
+        min-width: 100%;
+        border-radius: 30px;
+    }
+    .card-discovery {
+        border-radius: 30px;
+        background-color: #fff;
+        text-align: center;
+        margin: 1vw 3vw 1vw 3vw;
     }
 }
 
@@ -276,6 +419,24 @@ h1 strong {
         background-position-y: -200px;
         height: 600px;
     }
+    .figure-template {
+        height: 50vh;
+    }
+    .white-section {
+        padding-left: 12em;
+        padding-right: 12em;
+    }
+    .blue-section {
+        padding-left: 12em;
+        padding-right: 12em;
+    }
+    .section-template p {
+        font-size: 1.5em;
+    }
+    .article-template h2 {
+        font-size: 3em !important;
+        margin-top: 40px;
+    }
 }
 
 @media screen and (min-width: 1824px) {
@@ -285,6 +446,20 @@ h1 strong {
         background-size: cover;
         background-position-y: -450px;
         height: 700px;
+    }
+    .figure-template {
+        height: 50vh;
+    }
+    .white-section {
+        padding-left: 14em;
+        padding-right: 14em;
+    }
+    .blue-section {
+        padding-left: 14em;
+        padding-right: 14em;
+    }
+    .section-template p {
+        font-size: 1.8em;
     }
 }
 
@@ -335,10 +510,14 @@ h1 strong {
     text-decoration: none;
 }
 
+.footer-logo-container {
+    max-width: 50vw;
+}
+
 .logo-footer {
+    max-width: 100%;
     margin-top: 20px;
     margin-left: -30px;
-    height: 30%;
 }
 
 .footer-menu {
@@ -417,7 +596,8 @@ h1 strong {
 }
 
 .footer-copyright {
-    background-color: #21243D;
+    background-color: #0C4495;
+    ;
     color: #fff;
     text-align: center;
 }
