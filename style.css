@@ -15,6 +15,11 @@ body {
     color: #71A5DE;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
 header ul {
     display: flex;
     justify-content: space-between;
@@ -24,6 +29,16 @@ header ul {
     margin-bottom: 0;
 }
 
+#nav_ul_center {
+    width: 60%;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_li_center {
+     padding-right:30px ;
+ }
 
 /* menu  burger*/
 
@@ -88,9 +103,11 @@ header ul {
 
 header ul li a {
     text-decoration: none;
+    color:black;
 }
 
 .cta_primary {
+    width: 130px;
     height: 35px;
     border-radius: 30px;
     background-color: #0C4495;
@@ -145,10 +162,10 @@ h2 {
 }
 
 #hero {
+    background-position-y: bottom;
     height: 60vh;
     width: 100vw;
-    background: url(assets/landscape1.jpg);
-    background-position-y: bottom;
+    background-image: url(assets/landscape1.jpg);
     background-size: cover;
     background-position:center;
 
@@ -227,9 +244,6 @@ h1 strong {
 
 
 /*------contact page end-------*/
-
-<<<<<<< HEAD
-=======
 
 /*------template page 1-------*/
 
@@ -377,9 +391,6 @@ h1 strong {
 
 /* ------ culture page end ------- */ 
 
-
-
-
 /*------template page 1 end-------*/
 
 /*------template page 2-------*/
@@ -493,135 +504,6 @@ img {
 
 /*------template page 2 end -------*/
 
-
-
-/*------media queries-------*/
-
-@media screen and (min-width: 321px) {
-    #hero {
-        width: 100%;
-        background-image: url(assets/landscape1.jpg);
-        background-size: cover;
-        background-position-y: -0px;
-        height: 400px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .desktop_only {
-        display: flex;
-    }
-    .cta--burger {
-        display: none;
-    }
-    .logo {
-        height: 80px;
-        width: 170px;
-        padding-left: 20px;
-    }
-    #hero {
-        width: 100%;
-        background-image: url(assets/landscape1.jpg);
-        background-size: cover;
-        background-position-y: -10px;
-        height: 500px;
-    }
-    .footer-content {
-        display: flex;
-        flex-direction: row;
-        justify-content: start;
-        align-items: center;
-        margin-top: 20px;
-    }
-    .figure-template {
-        height: 50vh;
-    }
-    .white-section {
-        padding: 5em;
-    }
-    .blue-section {
-        padding: 5em;
-    }
-    .section-template p {
-        font-size: 1em;
-    }
-    .article-template h2 {
-        font-size: 2em !important;
-    }
-    .cards-discovery {
-        display: inline-flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-    .img-discovery {
-        min-width: 100%;
-        border-radius: 30px;
-    }
-    .card-discovery {
-        border-radius: 30px;
-        background-color: #fff;
-        text-align: center;
-        margin: 1vw 3vw 1vw 3vw;
-    }
-}
-
-@media screen and (min-width: 1224px) {
-    #hero {
-        width: 100%;
-        background-image: url(assets/landscape1.jpg);
-        background-size: cover;
-        background-position-y: -200px;
-        height: 600px;
-    }
-    .figure-template {
-        height: 50vh;
-    }
-    .white-section {
-        padding-left: 12em;
-        padding-right: 12em;
-    }
-    .blue-section {
-        padding-left: 12em;
-        padding-right: 12em;
-    }
-    .section-template p {
-        font-size: 1.5em;
-    }
-    .article-template h2 {
-        font-size: 3em !important;
-        margin-top: 40px;
-    }
-}
-
-@media screen and (min-width: 1824px) {
-    #hero {
-        width: 100%;
-        background-image: url(assets/landscape1.jpg);
-        background-size: cover;
-        background-position-y: -450px;
-        height: 700px;
-    }
-    .figure-template {
-        height: 50vh;
-    }
-    .white-section {
-        padding-left: 14em;
-        padding-right: 14em;
-    }
-    .blue-section {
-        padding-left: 14em;
-        padding-right: 14em;
-    }
-    .section-template p {
-        font-size: 1.8em;
-    }
-}
-
-
-/*------media queries end-------*/
-
-
->>>>>>> 787a7325dfa8503d4dd4b20503700611611f2fd4
 /*------footer-------*/
 
 .footer {
@@ -790,12 +672,6 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-    .desktop_only {
-        display: flex;
-    }
-    .cta--burger {
-        display: none;
-    }
     .logo {
         height: 80px;
         width: 170px;
@@ -809,17 +685,96 @@ img {
         flex-direction: row;
         margin-top: 20px;
     }
+
+    .footer-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .figure-template {
+        height: 50vh;
+    }
+    .white-section {
+        padding: 5em;
+    }
+    .blue-section {
+        padding: 5em;
+    }
+    .section-template p {
+        font-size: 1em;
+    }
+    .article-template h2 {
+        font-size: 2em !important;
+    }
+    .cards-discovery {
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .img-discovery {
+        min-width: 100%;
+        border-radius: 30px;
+    }
+    .card-discovery {
+        border-radius: 30px;
+        background-color: #fff;
+        text-align: center;
+        margin: 1vw 3vw 1vw 3vw;
+    }
 }
+
+@media screen and (min-width: 1024px) {
+    .desktop_only {
+        display: flex;
+    }
+    .cta--burger {
+        display: none;
+    }
+}    
 
 @media screen and (min-width: 1224px) {
     #hero {
         height: 80vh;
+    }
+    .figure-template {
+        height: 50vh;
+    }
+    .white-section {
+        padding-left: 12em;
+        padding-right: 12em;
+    }
+    .blue-section {
+        padding-left: 12em;
+        padding-right: 12em;
+    }
+    .section-template p {
+        font-size: 1.5em;
+    }
+    .article-template h2 {
+        font-size: 3em !important;
+        margin-top: 40px;
     }
 }
 
 @media screen and (min-width: 1824px) {
     #hero {
         height: 80vh;
+    }
+    .figure-template {
+        height: 50vh;
+    }
+    .white-section {
+        padding-left: 14em;
+        padding-right: 14em;
+    }
+    .blue-section {
+        padding-left: 14em;
+        padding-right: 14em;
+    }
+    .section-template p {
+        font-size: 1.8em;
     }
 }
 
