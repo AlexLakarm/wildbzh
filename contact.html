@@ -12,6 +12,22 @@
         <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         <title>The Wild Bzh</title>
     </head>
+
+<body class="welcome">
+    <div class="cta--burger">
+        <div class="trait"></div>
+        <div class="trait"></div>
+        <div class="trait"></div>
+    </div>
+    <div class="menu--burger">
+        <ul>
+            <li> <a href="activites.html">Activités</a></li>
+            <li> <a href="culture.html">Culture</a></li>
+            <li> <a href="nature.html">Nature</a></li>
+            <li> <a href="gastronomie.html">Gastronomie</a></li>
+            <li> <a href="contact.html">Nous contacter</a></li>
+        </ul>
+    </div>
 <header>
     <nav>
         <ul>
@@ -29,17 +45,15 @@
         </ul>    
         <ul id="nav_ul_center" >     
             <li class="nav_li_center nav_li desktop_only"><a href="activites.html">Activités</a></li>
-            <li class="nav_li_center nav_li desktop_only"><a href="template.html">Culture-template</a></li>
-            <li class="nav_li_center nav_li desktop_only">Nature</li>
-            <li class="nav_li_center nav_li desktop_only">Gastronomie</li>
+            <li class="nav_li_center nav_li desktop_only"><a href="culture.html">Culture</a></li>
+            <li class="nav_li_center nav_li desktop_only"><a href="nature.html">Nature</a></li>
+            <li class="nav_li_center nav_li desktop_only"><a href="gastronomie.html">Gastronomie</a></li>
         </ul>    
         <ul>    
             <li class="nav_li desktop_only cta_primary"><a href="contact.html">Nous contacter</a></li>
         </ul>
     </nav>  
 </header>
-
-<body>
     <main>
         <h1 class="contact_h1">
             Envie de<br/><strong>nous contacter ?</strong>
@@ -140,7 +154,23 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+        const menuBurger = document.querySelector(".menu--burger");
+        const cta = document.querySelector(".cta--burger");
+
+        function burgerMenu() {
+            // permet de fermer ou ouvrir le menu burger
+            if (menuBurger.classList.contains("open")) {
+                menuBurger.style.transform = 'translateX(100%)';
+                menuBurger.classList.remove("open")
+            } else {
+                menuBurger.style.transform = 'translateX(0%)';
+                menuBurger.classList.add("open")
+            }
+        }
+
+        cta.addEventListener("click", burgerMenu);
+    </script>
 </body>
 
 </html>
