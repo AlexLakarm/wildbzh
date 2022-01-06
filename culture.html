@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-        <title>Culture</title>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Culture</title>
+</head>
+
 <body class="welcome">
     <div class="cta--burger">
         <div class="trait"></div>
@@ -40,21 +42,21 @@
                     <path d="M5.22375 85.1385C17.8672 69.7411 15.6971 47.1957 27.9582 32.9C39.527 48.4164 36.6852 69.6583 50.176 85.1385C44.0842 86.8505 38.1319 84.5748 33.6419 79.4492C35.7086 85.7954 33.4765 91.6761 27.9582 96C23.0497 92.4519 21.3446 87.797 22.7913 82.0352C17.4642 85.4282 11.8839 86.4988 5.22375 85.1385Z" fill="#0C4495"/>
                     </svg>
                     </a></li>
-            </ul>    
-            <ul id="nav_ul_center" >     
+            </ul>
+            <ul id="nav_ul_center">
                 <li class="nav_li_center nav_li desktop_only"><a href="activites.html">Activités</a></li>
                 <li class="nav_li_center nav_li desktop_only"><a href="culture.html">Culture</a></li>
                 <li class="nav_li_center nav_li desktop_only"><a href="nature.html">Nature</a></li>
                 <li class="nav_li_center nav_li desktop_only"><a href="gastronomie.html">Gastronomie</a></li>
-            </ul>    
-            <ul>    
+            </ul>
+            <ul>
                 <li class="nav_li desktop_only cta_primary"><a href="contact.html">Nous contacter</a></li>
             </ul>
-        </nav>  
+        </nav>
     </header>
     <section class="title-template">
-        <h1>
-            Envie de<br/><strong>respirer ?</strong>
+        <h1 class="contact_h1">
+            Envie de<br/><strong>découvrir ?</strong>
         </h1>
     </section>
     <main>
@@ -66,7 +68,7 @@
                 </figure>
                 <article class="article-template">
                     <h2>La ville de St-Malo</h2>
-                    <p>Saint-Malo est une ville portuaire de Bretagne, au nord-ouest de la France. De hauts murs en granite ceignent la vieille ville, qui fut autrefois un bastion pour les corsaires (pirates approuvés par le roi). La cathédrale de Saint-Malo, 
+                    <p>Saint-Malo est une ville portuaire de Bretagne, au nord-ouest de la France. De hauts murs en granite ceignent la vieille ville, qui fut autrefois un bastion pour les corsaires (pirates approuvés par le roi). La cathédrale de Saint-Malo,
                         au centre de la vieille ville, arbore des styles roman et gothique, et possède des vitraux narrant l'histoire de la ville. </p>
                 </article>
             </section>
@@ -77,7 +79,8 @@
                 </figure>
                 <article class="article-template">
                     <h2>La ville de Locronan</h2>
-                    <p> Commune française, située dans le département du Finistère en région Bretagne. L'important patrimoine architectural de Locronan, préservé très précocement, a permis au village d'être membre du réseau des petites cités de caractère. </p>
+                    <p> Commune française, située dans le département du Finistère en région Bretagne. L'important patrimoine architectural de Locronan, préservé très précocement, a permis au village d'être membre du réseau des petites cités de caractère.
+                    </p>
                 </article>
             </section>
 
@@ -97,7 +100,8 @@
                 </figure>
                 <article class="article-template">
                     <h2>Les Iles de Bretagne</h2>
-                    <p>Nul besoin de s'envoler sur une île du bout du monde pour être dépaysé, un détour par la Bretagne suffit ! On compte plus de 750 îles et ilots le long du littoral breton, un terrain de jeux et de découvertes inépuisable. Paysages verdoyants et plages de sable fin!</p>
+                    <p>Nul besoin de s'envoler sur une île du bout du monde pour être dépaysé, un détour par la Bretagne suffit ! On compte plus de 750 îles et ilots le long du littoral breton, un terrain de jeux et de découvertes inépuisable. Paysages verdoyants
+                        et plages de sable fin!</p>
                 </article>
             </section>
         </section>
@@ -125,7 +129,7 @@
                 </div>
             </div>
         </section>
-         <!--CODE ENDS -->
+        <!--CODE ENDS -->
     </main>
 
 
@@ -197,26 +201,8 @@
             </div>
         </div>
     </div>
-     <!--FOOTER ENDS -->
-
-    <script>
-        const menuBurger = document.querySelector(".menu--burger");
-        const cta = document.querySelector(".cta--burger");
-    
-        function burgerMenu () {
-            // permet de fermer ou ouvrir le menu burger
-            if (menuBurger.classList.contains("open")) {
-                menuBurger.style.transform = 'translateX(100%)';
-                menuBurger.classList.remove("open")
-            } else {
-                menuBurger.style.transform = 'translateX(0%)';
-                menuBurger.classList.add("open")
-            }
-        }
-    
-        cta.addEventListener("click", burgerMenu);
-    
-    </script>
-
+    <!--FOOTER ENDS -->
+    <script src="script.js"></script>
 </body>
+
 </html>
