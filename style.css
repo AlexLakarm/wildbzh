@@ -37,8 +37,9 @@ header ul {
 }
 
 .nav_li_center {
-     padding-right:30px ;
- }
+    padding-right: 30px;
+}
+
 
 /* menu  burger*/
 
@@ -64,7 +65,7 @@ header ul {
 .menu--burger {
     height: 100vh;
     width: 40%;
-    background:linear-gradient(to right,#0C4495,#011B90);
+    background: linear-gradient(to right, #0C4495, #011B90);
     color: whitesmoke;
     opacity: 70%;
     position: absolute;
@@ -87,7 +88,7 @@ header ul {
 
 .menu--burger ul li a {
     text-decoration: none;
-    color:white;
+    color: white;
 }
 
 
@@ -108,7 +109,7 @@ header ul {
 
 header ul li a {
     text-decoration: none;
-    color:black;
+    color: black;
 }
 
 .cta_primary {
@@ -145,27 +146,15 @@ header ul li a {
     margin-top: 0;
 }
 
-h1 {
-    font-size: 40px;
+h2 {
     font-family: 'Coiny', cursive;
-    z-index: -1;
 }
 
-h2 {
-    font-size: 30px;
-    font-family: 'Coiny', cursive;
-}
 
 /*------ common elements end--------*/
 
 
 /*------ welcome page --------*/
-
-.welcome h1 {
-    position: relative;
-    text-align: center;
-    margin-top: 0px;
-}
 
 #hero {
     background-position-y: bottom;
@@ -173,8 +162,7 @@ h2 {
     width: 100vw;
     background-image: url(assets/landscape1.jpg);
     background-size: cover;
-    background-position:center;
-
+    background-position: center;
 }
 
 .welcome main h2 {
@@ -182,6 +170,7 @@ h2 {
     font-size: 20px;
     font-weight: 400;
 }
+
 
 /*------welcome page end-------*/
 
@@ -194,10 +183,10 @@ h2 {
 
 .contact_h1 {
     color: black;
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: "Coiny";
-    margin: 25px auto;
-    line-height: 3rem;
+    margin: 5px auto;
+    line-height: 2rem;
     text-align: center;
     top: 0px;
 }
@@ -251,153 +240,6 @@ h1 strong {
 
 /*------contact page end-------*/
 
-/*------template page 1-------*/
-
-/* ------ culture page ------- */ 
-
-.culture_h1{
-    padding-left: 20px;
-}
-.parentBox{
-    box-sizing: border-box;
-    display: block;
-    /*margin-left: 200px; le faire en padding*/
-    position: relative;
-    width: 80%;
-    height: 224px;
-}
-.child1{
-    box-sizing: content-box; 
-    position: absolute;   
-    padding-left: 20px;
-}
-
-.child1 img{
-    box-sizing: content-box;
-    border : 6px solid #0C4495;
-    height: 95px;  
-    border-radius: 20px;
-    z-index: -1;
-    position: absolute;
-}
-
-.child2{
-    box-sizing: content-box;
-    background-color: #0C4495;
-   /* padding: -100px;*/
-    padding-left: 10px;
-    margin-left: 60px;
-    height : 100px;
-    width: 55%;
-    margin-top: 50px;
-    border-radius: 20px;
-    z-index: 1;
-    position: absolute;
-    font-size: 10px;
-    
-}
-
-.child2 h2{
-    color: #FF67A3;
-    font-size: 12px;
-}
-
-
-/* 2eme Box */ 
-
-.section2{
-    background-color: #0C4495;
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-}
-
-.child3{
-    box-sizing: content-box; 
-    position: absolute;   
-    padding-left: 20px;
-    background-color: white;
-    padding-top: 30px;
-    /*margin-top: 90px;*/
-    /*width: 100%;*/
-}
-
-.child3 img{
-    box-sizing: content-box;
-    border : 6px solid #0C4495;
-    height: 95px;  
-    border-radius: 20px;
-    z-index: 0;
-    position: absolute;
-    
-}
-
-.child4{
-    box-sizing: content-box;
-    background-color: white;
-   /* padding: -100px;*/
-   /* padding-left: 10px;*/
-    margin-left: 60px;
-    /*height : 100px;*/
-    width: 55%;
-    margin-top: 90px;
-    border-radius: 20px;
-    z-index: 2;
-    position: absolute;
-    font-size: 10px;
-    
-}
-
-
-.child4 h2{
-    color: #FF67A3;
-    font-size: 12px;
-}
-
-
-/* 3eme Box */ 
-
-.child5{
-    box-sizing: content-box; 
-    position: absolute;   
-    padding-left: 20px;
-    /*margin-top: 200px;*/
-}
-
-.child5 img{
-    box-sizing: content-box;
-    border : 6px solid #0C4495;
-    height: 95px;  
-    border-radius: 20px;
-    z-index: -1;
-    position: absolute;
-    margin-top: 300px;
-}
-
-.child6 h2{
-    color: #FF67A3;
-    font-size: 12px;
-}
-
-.child6{
-    box-sizing: content-box;
-    background-color: #0C4495;
-   /* padding: -100px;*/
-    padding-left: 10px;
-    margin-left: 60px;
-    height : 100px;
-    width: 55%;
-    margin-top: 350px;
-    border-radius: 20px;
-    z-index: 1;
-    position: absolute;
-    font-size: 10px;
-    
-}
-
-/* ------ culture page end ------- */ 
-
-/*------template page 1 end-------*/
 
 /*------template page 2-------*/
 
@@ -427,11 +269,11 @@ h1 strong {
     background-position-x: center;
     background-position-y: bottom;
     background-repeat: no-repeat;
-    padding: 1.5em;
+    padding: 1em;
 }
 
 .white-section {
-    padding: 1.5em;
+    padding: 1em;
 }
 
 .figure-template {
@@ -466,7 +308,7 @@ img {
 
 .section-cards-discovery h2 {
     color: #fff;
-    font-size: 2em !important;
+    font-size: 2rem !important;
     margin: 0px;
 }
 
@@ -502,13 +344,13 @@ img {
 }
 
 .card-discovery :hover {
-    border: 3px solid #0C4495;
     transition: .5s;
     transform: translate(5px, -5px);
 }
 
 
 /*------template page 2 end -------*/
+
 
 /*------footer-------*/
 
@@ -670,11 +512,11 @@ img {
 
 /*------footer end-------*/
 
+
 /*------media queries-------*/
 
 @media screen and (min-width: 321px) {
-    #hero {
-    }
+    #hero {}
 }
 
 @media screen and (min-width: 768px) {
@@ -686,12 +528,15 @@ img {
     #hero {
         height: 80vh;
     }
+    .contact_h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
     .footer-content {
         display: flex;
         flex-direction: row;
         margin-top: 20px;
     }
-
     .footer-content {
         display: flex;
         flex-direction: row;
@@ -738,7 +583,12 @@ img {
     .cta--burger {
         display: none;
     }
-}    
+    .contact_h1 {
+        font-size: 3.5rem;
+        margin-top: 20px;
+        line-height: 3.5rem;
+    }
+}
 
 @media screen and (min-width: 1224px) {
     #hero {
@@ -762,11 +612,21 @@ img {
         font-size: 3em !important;
         margin-top: 40px;
     }
+    .contact_h1 {
+        margin-top: 50px;
+        font-size: 4rem;
+        line-height: 4rem;
+    }
 }
 
 @media screen and (min-width: 1824px) {
     #hero {
         height: 80vh;
+    }
+    .contact_h1 {
+        margin-top: 50px;
+        font-size: 6rem;
+        line-height: 6rem;
     }
     .figure-template {
         height: 50vh;
@@ -783,5 +643,6 @@ img {
         font-size: 1.8em;
     }
 }
+
 
 /*------media queries end-------*/
