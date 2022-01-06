@@ -63,10 +63,10 @@ header ul {
 
 .menu--burger {
     height: 100vh;
-    width: 45%;
-    background-color: black;
+    width: 40%;
+    background:linear-gradient(to right,#0C4495,#011B90);
     color: whitesmoke;
-    opacity: 50%;
+    opacity: 70%;
     position: absolute;
     top: 0;
     right: 0;
@@ -80,9 +80,14 @@ header ul {
 }
 
 .menu--burger ul {
-    padding-left: 10px;
+    padding-left: 15px;
     padding-top: 5px;
     margin-top: 0;
+}
+
+.menu--burger ul li a {
+    text-decoration: none;
+    color:white;
 }
 
 
@@ -143,6 +148,7 @@ header ul li a {
 h1 {
     font-size: 40px;
     font-family: 'Coiny', cursive;
+    z-index: -1;
 }
 
 h2 {
@@ -416,7 +422,7 @@ h1 strong {
 
 .blue-section {
     background-color: #0C4495;
-    background-image: url(assets/Asset\ 2logo.svg);
+    background-image: url(assets/Asset2logo.svg);
     background-size: 120%;
     background-position-x: center;
     background-position-y: bottom;
