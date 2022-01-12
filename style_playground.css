@@ -68,9 +68,10 @@
     
     .wrapper-title {
         height: 100vh;
+        width: 100vw;
         /*for centering*/
         display: flex;
-        flex-flow: column wrap;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         background: linear-gradient(rgba(255, 255, 255, 0.55), rgba(36, 124, 224, 0.5)), url(assets/hero.png);
@@ -89,6 +90,7 @@
         font-family: var(--mono);
         font-size: 1.5em;
         color: var(--primary-500);
+        margin-bottom: 20px;
     }
     
     @keyframes typing {
@@ -100,6 +102,23 @@
     @keyframes blink {
         50% {
             border-color: transparent
+        }
+    }
+    
+    #contour-line {
+        width: 75vw;
+        height: auto;
+    }
+    
+    .path {
+        stroke-dasharray: 4000;
+        stroke-dashoffset: 4000;
+        animation: dash 5s linear forwards;
+    }
+    
+    @keyframes dash {
+        to {
+            stroke-dashoffset: 0;
         }
     }
     /* projects section */
