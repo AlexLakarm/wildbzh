@@ -1,4 +1,18 @@
 /*------ common elements --------*/
+:root {
+    --black: #161C22;
+    --primary-100: #F8F9FB;
+    --primary-200: #E1ECF7;
+    --primary-300: #AECBEB;
+    --primary-400: #848D9A;
+    --primary-500: #0C4495;
+    --white: #fff;
+    --accent-1: #FF67A3;
+    --accent-2: #F8F600;
+    --font-size: 1.3rem;
+    --mono: "Coiny", monospace;
+    --sans: "Nunito", sans-serif;
+}
 
 body {
     margin: 0 auto;
@@ -148,6 +162,17 @@ header ul li a {
 
 h2 {
     font-family: 'Coiny', cursive;
+    line-height: 5px;
+}
+
+h3 {
+    margin-top: 5px;
+    color:#0C4495;
+    font-size: 30px;
+}
+
+h4 {
+    margin-bottom: 5px;
 }
 
 
@@ -167,11 +192,83 @@ h2 {
 
 .welcome main h2 {
     text-align: center;
-    font-size: 20px;
     font-weight: 400;
+    margin-top: 20px;
+    margin-left: 15px;
+    line-height: 20px;
 }
 
+.call-action-plus {
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--primary-500);
+    padding: 0.5rem;
+    border-radius: 20px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    width: 50vw;
+    margin-left: 20px;
+    margin-top: -10px;
+    margin-bottom: 50px;
+}
 
+.text-box a:hover {
+    color: var(--accent-1);
+    text-decoration: none;
+}
+
+.text-left {
+    margin-right: 0;
+}
+
+.tag {
+    font-size: 45px;
+    font-style: italic;
+    color: #FF67A3;
+}
+
+.tag-right {
+    padding: 95%;
+}
+
+#wrappertitle {
+    margin-top: 20px;
+    padding-top: 30px;
+    margin-bottom: 100px;
+    font-size: 33px;
+}
+
+#wrappertitle strong {
+    font-size: 40px;
+}
+
+#contour-line {
+    width: 80vw;
+    height: auto;
+    padding-left: 10%;
+}
+
+article {
+    padding-left: 20px;
+    padding-right: 25px;
+}
+
+article p {
+    text-align: justify;
+}
+
+.path {
+    stroke-dasharray: 4000;
+    stroke-dashoffset: 4000;
+    animation: dash 5s linear forwards;
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
 /*------welcome page end-------*/
 
 
@@ -253,13 +350,12 @@ h1 strong {
 
 .article-template h2 {
     color: #FF67A3;
-    font-size: 18px !important;
-    line-height: 80%;
-    margin-top: 20px;
+    font-size: 22px;
+    margin-top: 25px;
 }
 
 .section-template p {
-    font-size: 0.5em;
+    font-size: 0.75em;
 }
 
 .blue-section {
@@ -291,10 +387,12 @@ h1 strong {
 
 img {
     height: 100%;
+    margin-left: 0;
+    width: 100%;
     border-radius: 30px;
     object-fit: cover;
-    width: 70%;
     border: 5px solid #0C4495;
+    margin-bottom: 50px;
 }
 
 
@@ -528,6 +626,65 @@ img {
     #hero {
         height: 80vh;
     }
+
+    .welcome main h2 {
+        line-height: 40px;
+        font-size: 35px;
+        margin-top:35px;
+        margin-bottom: 20px;
+    }
+    
+    .call-action-plus {
+        width: 180px;
+    }
+
+    #projects h2 {
+        margin-bottom: 70px;
+        margin-top: 50px;
+    }
+
+    #projects article {
+        display : flex;
+        justify-content: space-around;
+        margin-bottom: 100px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    #contour-line {
+        width: 70vw;
+        height: 60vh;
+        padding-left: 10%;
+    }
+    .reverse {
+        flex-direction: row-reverse;
+    }
+
+    .text-right {
+        margin-left: 80px;
+        margin-right: 25px;
+    }
+
+    .text-left {
+        margin-right: 80px;
+        margin-left: 25px;
+    }
+
+    img {
+        height: 100%;
+        width: 45vw;
+        margin-left: 45px;
+    }
+
+    #wrappertitle {
+        font-size: 50px;
+        margin-bottom: 40px;
+    }
+
+    #wrappertitle strong{
+        font-size: 60px;
+    }
+
+
     .contact_h1 {
         font-size: 3rem;
         line-height: 3rem;
@@ -609,7 +766,6 @@ img {
         font-size: 1.5em;
     }
     .article-template h2 {
-        font-size: 3em !important;
         margin-top: 40px;
     }
     .contact_h1 {
