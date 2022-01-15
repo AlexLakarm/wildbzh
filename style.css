@@ -690,6 +690,12 @@ img {
         margin-left: 25px;
     }
 
+    article img {
+        height: 90%;
+        width: 45vw;
+    }
+
+
     figure img {
         height: 100%;
         width: 45vw;
